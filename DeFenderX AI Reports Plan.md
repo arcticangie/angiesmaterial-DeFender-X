@@ -365,7 +365,7 @@
 |------|------|
 | **Incident** | 보안 위협 이벤트 |
 | **Severity** | 위협 심각도 (Critical/High/Medium/Low) |
-| **Status** | 처리 상태 (Resolved/Under Investigation/New) |
+| **Status** | 처리 상태 (Resolved/In Progress/New) |
 | **MITRE ATT&CK** | 사이버 공격 전술 및 기법 프레임워크 |
 | **CVE** | Common Vulnerabilities and Exposures (공통 취약점 및 노출) |
 | **CVSS** | Common Vulnerability Scoring System (공통 취약점 점수 시스템) |
