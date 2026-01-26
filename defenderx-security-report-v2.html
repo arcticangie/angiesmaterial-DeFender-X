@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DefenderX - 기간별 보안 리포트</title>
+    <title>DeFender X - 기간별 보안 리포트</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
@@ -617,12 +617,11 @@
         <div class="header-content">
             <div class="logo">
                 <div class="logo-icon">DX</div>
-                <span class="logo-text">DefenderX</span>
+                <span class="logo-text">DeFender X</span>
             </div>
             <div class="header-meta">
                 <span>생성일: 2024-12-09</span>
                 <span>보안관리팀</span>
-                <span>v0.1.0</span>
             </div>
         </div>
     </header>
@@ -643,7 +642,7 @@
                     <h1>월간 보안 리포트</h1>
                     <div class="report-meta">
                         <span>기간: 2024.11.01 ~ 11.30</span>
-                        <span>대상: CISO, 경영진</span>
+                        <span>생성자: 박진주 </span>
                     </div>
                 </div>
                 <div class="report-actions">
@@ -822,7 +821,7 @@
                 <div class="incident-card">
                     <div class="incident-card-header">
                         <div>
-                            <div class="incident-title">Ransomware Execution Attempt</div>
+                            <div class="incident-title">ID-99 Ransomware Execution Attempt</div>
                             <span class="severity-badge critical" style="margin-top: 0.25rem;">Critical</span>
                         </div>
                         <span class="status-badge resolved">Resolved</span>
@@ -893,12 +892,12 @@
                 <div class="table-wrapper">
                     <table>
                         <thead>
-                            <tr><th>#</th><th>Host</th><th>IP</th><th>부서</th><th>건수</th></tr>
+                            <tr><th>#</th><th>Host</th><th>IP</th><th>User</th><th>건수</th></tr>
                         </thead>
                         <tbody>
-                            <tr><td>1</td><td>WS-DEV-PC015</td><td>192.168.20.15</td><td>개발팀</td><td>18</td></tr>
-                            <tr><td>2</td><td>WS-FIN-PC042</td><td>192.168.10.42</td><td>재무팀</td><td>15</td></tr>
-                            <tr><td>3</td><td>SRV-FILE-01</td><td>192.168.1.10</td><td>인프라</td><td>12</td></tr>
+                            <tr><td>1</td><td>WS-DEV-PC015</td><td>192.168.20.15</td><td>angie229</td><td>18</td></tr>
+                            <tr><td>2</td><td>WS-FIN-PC042</td><td>192.168.10.42</td><td>hsdaerinim</td><td>15</td></tr>
+                            <tr><td>3</td><td>SRV-FILE-01</td><td>192.168.1.10</td><td>ibdev3836</td><td>12</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -913,12 +912,12 @@
                 <div class="table-wrapper">
                     <table>
                         <thead>
-                            <tr><th>CVE ID</th><th>CVSS</th><th>영향 호스트</th><th>패치 상태</th></tr>
+                            <tr><th>CVE ID</th><th>설명</th><th>CVSS</th><th>영향 호스트</th></tr>
                         </thead>
                         <tbody>
-                            <tr><td>CVE-2024-38077</td><td><span class="severity-badge critical">9.8</span></td><td>23</td><td style="color: var(--investigating);">진행중</td></tr>
-                            <tr><td>CVE-2024-21412</td><td><span class="severity-badge critical">9.6</span></td><td>18</td><td style="color: var(--resolved);">완료</td></tr>
-                            <tr><td>CVE-2024-30088</td><td><span class="severity-badge critical">9.3</span></td><td>15</td><td style="color: var(--investigating);">진행중</td></tr>
+                            <tr><td>CVE-2024-38077</td><td>Windows Remote Desktop Licensing Service Remote Code Execution Vulnerability</td><td><span class="severity-badge critical">9.8</span></td><td>23</td></tr>
+                            <tr><td>CVE-2024-21412</td><td>Internet Shortcut File Security Feature Bypass Vulnerability</td><td><span class="severity-badge critical">9.6</span></td><td>18</td></tr>
+                            <tr><td>CVE-2024-30088</td><td>Windows Kernel Elevation of Privilege Vulnerability</td><td><span class="severity-badge critical">9.3</span></td><td>15</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -967,9 +966,9 @@
                     
                     <h4>우선 조치 사항</h4>
                     <ul>
-                        <li><strong>[긴급]</strong> CVE-2024-38077 패치 완료 (23개 호스트)</li>
-                        <li><strong>[높음]</strong> 피싱 대응 보안 교육 시행</li>
-                        <li><strong>[중간]</strong> 개발팀 PC015 호스트 점검</li>
+                        <li><strong>[긴급]</strong> CVE-2024-38077 취약점 패치 작업을 최우선으로 진행해야 합니다. 현재 23개 호스트가 영향을 받고 있으며, 해당 취약점은 Windows Remote Desktop Licensing 서비스의 원격 코드 실행(RCE) 취약점으로 CVSS 9.8점의 심각한 위험도를 가집니다. 공격자가 인증 없이 원격에서 시스템을 완전히 장악할 수 있으므로, 금주 내 전체 패치 완료를 목표로 긴급 유지보수 일정을 수립하시기 바랍니다.</li>
+                        <li><strong>[높음]</strong> 피싱 메일 관련 Medium 등급 이벤트가 전월 대비 35% 증가하였습니다. 재무팀, 인사팀 등 민감 정보를 다루는 부서를 우선 대상으로 피싱 대응 보안 교육을 시행해야 합니다. 교육 내용에는 의심스러운 메일 식별 방법, 링크 클릭 전 URL 확인 절차, 첨부파일 실행 주의사항을 포함하고, 모의 피싱 테스트를 병행하여 교육 효과를 측정하시기 바랍니다.</li>
+                        <li><strong>[중간]</strong> 개발팀 WS-DEV-PC015 호스트에서 월간 18건의 인시던트가 집중 발생하였습니다. Critical/High 등급 3건이 포함되어 있어 해당 호스트에 대한 정밀 보안 점검이 필요합니다. 설치된 소프트웨어 목록 검토, 불필요한 서비스 비활성화, 사용자 행위 분석을 통해 반복적인 위협 발생 원인을 파악하고 개선 조치를 수행하시기 바랍니다.</li>
                     </ul>
                 </div>
             </section>
@@ -982,7 +981,7 @@
                     <h1>주간 보안 리포트</h1>
                     <div class="report-meta">
                         <span>기간: 2024.12.02 ~ 12.08 (Week 49)</span>
-                        <span>대상: 보안팀 리더</span>
+                        <span>생성자: 박진주</span>
                     </div>
                 </div>
                 <div class="report-actions">
@@ -1065,7 +1064,7 @@
                 <div class="incident-card">
                     <div class="incident-card-header">
                         <div>
-                            <div class="incident-title">Ransomware Dropper Detection</div>
+                            <div class="incident-title">ID-99 Ransomware Dropper Detection</div>
                             <span class="severity-badge critical">Critical</span>
                         </div>
                         <span class="status-badge resolved">Resolved</span>
@@ -1105,11 +1104,11 @@
                 </div>
                 <div class="table-wrapper">
                     <table>
-                        <thead><tr><th>#</th><th>Host</th><th>IP</th><th>부서</th><th>건수</th></tr></thead>
+                        <thead><tr><th>#</th><th>Host</th><th>IP</th><th>User</th><th>건수</th></tr></thead>
                         <tbody>
-                            <tr><td>1</td><td>WS-SALES-PC012</td><td>192.168.50.12</td><td>영업팀</td><td>6</td></tr>
-                            <tr><td>2</td><td>WS-DEV-PC003</td><td>192.168.20.3</td><td>개발팀</td><td>5</td></tr>
-                            <tr><td>3</td><td>WS-MKT-PC007</td><td>192.168.40.7</td><td>마케팅팀</td><td>4</td></tr>
+                            <tr><td>1</td><td>WS-SALES-PC012</td><td>192.168.50.12</td><td>seungwon</td><td>6</td></tr>
+                            <tr><td>2</td><td>WS-DEV-PC003</td><td>192.168.20.3</td><td>Jinsu99</td><td>5</td></tr>
+                            <tr><td>3</td><td>WS-MKT-PC007</td><td>192.168.40.7</td><td>hnalim</td><td>4</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -1131,9 +1130,9 @@
                     </div>
                 </div>
                 <div class="summary-grid" style="grid-template-columns: repeat(3, 1fr);">
-                    <div class="summary-card" style="border-left: 3px solid var(--resolved);"><div class="count" style="color: var(--resolved);">54</div><div class="label">Resolved</div></div>
+                    <div class="summary-card" style="border-left: 3px solid var(--resolved);"><div class="count" style="color: var(--resolved);">54</div><div class="label">해결</div></div>
                     <div class="summary-card" style="border-left: 3px solid var(--investigating);"><div class="count" style="color: var(--investigating);">6</div><div class="label">조사중</div></div>
-                    <div class="summary-card" style="border-left: 3px solid var(--gray-400);"><div class="count" style="color: var(--gray-400);">2</div><div class="label">대기</div></div>
+                    <div class="summary-card" style="border-left: 3px solid var(--gray-400);"><div class="count" style="color: var(--gray-400);">2</div><div class="label">신규</div></div>
                 </div>
             </section>
 
@@ -1149,9 +1148,12 @@
                     
                     <h4>우선 조치 사항</h4>
                     <ul>
-                        <li><strong>[긴급]</strong> 영업팀 PC012 정밀 점검</li>
-                        <li><strong>[높음]</strong> 피싱 캠페인 추가 분석</li>
-                        <li><strong>[중간]</strong> 미해결 6건 금주 내 처리</li>
+                        <li><strong>[긴급]</strong> 영업팀 PC012에 대한 즉각적인 정밀 점검 필요 ─ 의심 행위 로그 및 악성 파일 여부를 우선 확인하고, 계정 도용 가능성 및 네트워크 연결 이력을 포함한 종합 진단을 권고드립니다.</li>
+
+<li><strong>[높음]</strong> 최근 발생한 피싱 캠페인에 대한 추가 분석 수행 ─ 유포 경로, 메시지 변종, 대상 사용자군 식별 등을 포함하여 조직 내 유사 공격 재발 방지를 위한 대응 전략 수립이 필요합니다.</li>
+
+<li><strong>[중간]</strong> 현재 미해결된 6건의 보안 이슈에 대한 금주 내 후속 조치 완료 ─ 각 케이스별 영향 범위 확인 후 우선순위에 따라 처리하고, 완료 내역은 정리하여 주간 보고 시 공유할 것을 권고드립니다.</li>
+
                     </ul>
                 </div>
             </section>
@@ -1164,7 +1166,7 @@
                     <h1>일간 보안 리포트</h1>
                     <div class="report-meta">
                         <span>일자: 2024.12.09 (월)</span>
-                        <span>대상: 보안 담당자</span>
+                        <span>생성자: 박진주</span>
                     </div>
                 </div>
                 <div class="report-actions">
@@ -1233,51 +1235,106 @@
                 </div>
             </section>
 
-            <!-- 3. 주요 Incident 분석 -->
+          <!-- 3. 주요 Incident 분석 -->
             <section class="section">
                 <div class="section-header">
                     <div class="section-number">3</div>
                     <h2 class="section-title">주요 Incident 분석</h2>
                 </div>
                 
+                <!-- 인시던트 1: 파일 아티팩트 포함 -->
                 <div class="incident-card">
                     <div class="incident-card-header">
                         <div>
-                            <div class="incident-title">SSH Brute Force Attack</div>
+                            <div class="incident-title">ID-102 Malicious File Execution Attempt</div>
                             <span class="severity-badge high">High</span>
                         </div>
                         <span class="status-badge resolved">Resolved</span>
                     </div>
                     <div class="incident-grid">
                         <div class="incident-field"><span class="incident-field-label">Date</span><span class="incident-field-value">2024-12-09 09:15</span></div>
-                        <div class="incident-field"><span class="incident-field-label">Host</span><span class="incident-field-value">SRV-DEV-01</span></div>
-                        <div class="incident-field"><span class="incident-field-label">IP</span><span class="incident-field-value">192.168.1.50</span></div>
-                        <div class="incident-field"><span class="incident-field-label">User</span><span class="incident-field-value">외부 IP</span></div>
+                        <div class="incident-field"><span class="incident-field-label">Host</span><span class="incident-field-value">WS-DEV-PC023</span></div>
+                        <div class="incident-field"><span class="incident-field-label">IP</span><span class="incident-field-value">192.168.20.23</span></div>
+                        <div class="incident-field"><span class="incident-field-label">User</span><span class="incident-field-value">kim.developer</span></div>
                     </div>
 
                     <div class="recommendation-box">
                         <div class="recommendation-label">Summary</div>
-                        <p class="recommendation-text">외부 IP에서 SSH 포트로 반복 로그인 시도. 50회 실패 후 IP 자동 차단됨.</p>
+                        <p class="recommendation-text">개발팀 사용자가 외부에서 다운로드한 파일 실행 시도가 탐지되었습니다. 해당 파일은 정상적인 개발 도구로 위장한 악성 실행 파일로, WildFire 분석 결과 Malware로 판정되었습니다. XDR 에이전트가 파일 실행을 사전 차단하여 실제 피해는 발생하지 않았으나, 동일 파일이 3건의 추가 Alert와 연관되어 있어 내부 확산 시도가 있었던 것으로 추정됩니다.</p>
                     </div>
 
                     <div class="recommendation-box">
-                        <div class="recommendation-label">MITRE ATT&CK</div>
-                        <div class="mitre-tags">
-                            <span class="mitre-tag">T1110 Brute Force</span>
-                            <span class="mitre-tag">T1078 Valid Accounts</span>
+                        <div class="recommendation-label">파일 아티팩트 정보</div>
+                        <div class="table-wrapper" style="margin-top: 0.5rem;">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>파일명</th>
+                                        <th>SHA256</th>
+                                        <th>타입</th>
+                                        <th>WildFire 판정</th>
+                                        <th>조치</th>
+                                        <th>서명</th>
+                                        <th>연관 Alert 수</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>vscode_installer_v2.exe</td>
+                                        <td style="font-size: 0.7rem;">a3f2b8c9d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1</td>
+                                        <td>PE Executable</td>
+                                        <td><span class="severity-badge critical">Malware</span></td>
+                                        <td style="color: var(--critical);">실행 차단</td>
+                                        <td>미서명</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>update_helper.dll</td>
+                                        <td style="font-size: 0.7rem;">b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5</td>
+                                        <td>DLL Library</td>
+                                        <td><span class="severity-badge high">Grayware</span></td>
+                                        <td style="color: var(--critical);">격리</td>
+                                        <td>미서명</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
+                    </div>
+
+                    <div class="recommendation-box">
+                        <div class="recommendation-label">주요 공격 기법 (MITRE ATT&CK)</div>
+                        <div class="mitre-tags" style="margin-bottom: 0.5rem;">
+                            <span class="mitre-tag">T1204.002 User Execution: Malicious File</span>
+                            <span class="mitre-tag">T1036.005 Masquerading: Match Legitimate Name</span>
+                            <span class="mitre-tag">T1059.001 PowerShell</span>
+                        </div>
+                        <p class="recommendation-text" style="margin-top: 0.5rem;">
+                            공격자는 정상적인 개발 도구(VS Code)의 설치 파일명을 모방하여 사용자가 의심 없이 실행하도록 유도하는 Masquerading 기법을 사용했습니다. 파일 실행 시 PowerShell을 통해 추가 악성코드를 다운로드하고, 지속성 확보를 위한 레지스트리 수정을 시도하는 것으로 분석되었습니다. 이는 초기 접근(Initial Access) 이후 실행(Execution) 단계로 진행하려는 전형적인 공격 패턴입니다.
+                        </p>
+                    </div>
+
+                    <div class="recommendation-box">
+                        <div class="recommendation-label">권장 조치</div>
+                        <p class="recommendation-text">
+                            1. <strong>즉시 조치:</strong> 해당 호스트에서 동일 해시 파일이 다른 경로에 존재하는지 전체 디스크 스캔을 수행하고, 발견 시 즉시 격리 처리하시기 바랍니다.<br><br>
+                            2. <strong>확산 방지:</strong> 탐지된 SHA256 해시를 전사 EDR 정책에 블랙리스트로 등록하여 다른 호스트에서의 실행을 사전 차단하시기 바랍니다.<br><br>
+                            3. <strong>근본 원인 분석:</strong> 사용자가 해당 파일을 다운로드한 경로(웹사이트, 이메일, 메신저 등)를 확인하고, 해당 다운로드 소스를 웹 필터링 정책에 추가하시기 바랍니다.<br><br>
+                            4. <strong>사용자 교육:</strong> 개발팀 대상으로 공식 소프트웨어 배포 채널 이용 안내 및 비공식 다운로드의 위험성에 대한 보안 인식 교육을 실시하시기 바랍니다.
+                        </p>
                     </div>
 
                     <div class="editable-field">
                         <div class="editable-label">담당자 조치 (편집 가능)</div>
-                        <p class="editable-guide">※ 리포트 생성자/관리자가 직접 작성하세요.</p>
+                        <p class="editable-guide">※ 리포트 생성자/관리자가 직접 작성하세요. XDR 자동 조치 외에 보안 담당자가 수행한 추가 조치 사항을 기록합니다.</p>
                     </div>
                 </div>
 
+                <!-- 인시던트 2: 네트워크 아티팩트 포함 -->
                 <div class="incident-card">
                     <div class="incident-card-header">
                         <div>
-                            <div class="incident-title">Phishing Email Click</div>
+                            <div class="incident-title">ID-103 Suspicious Outbound Connection to C2 Server</div>
                             <span class="severity-badge medium">Medium</span>
                         </div>
                         <span class="status-badge resolved">Resolved</span>
@@ -1291,12 +1348,76 @@
 
                     <div class="recommendation-box">
                         <div class="recommendation-label">Summary</div>
-                        <p class="recommendation-text">피싱 메일 링크 클릭 시도. 웹 필터링에서 피싱 사이트 차단됨.</p>
+                        <p class="recommendation-text">인사팀 사용자의 워크스테이션에서 알려진 C2(Command & Control) 서버로 의심되는 외부 도메인으로의 아웃바운드 연결 시도가 탐지되었습니다. 해당 연결은 피싱 메일에 포함된 링크 클릭으로 인해 발생한 것으로 추정되며, 네트워크 방화벽에서 해당 통신을 차단하여 실제 데이터 유출은 발생하지 않았습니다. 목적지 IP는 러시아 소재 호스팅 업체로 확인되었으며, Threat Intelligence 조회 결과 Cobalt Strike C2 서버로 알려진 IOC입니다.</p>
+                    </div>
+
+                    <div class="recommendation-box">
+                        <div class="recommendation-label">네트워크 아티팩트 정보</div>
+                        <div class="table-wrapper" style="margin-top: 0.5rem;">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>도메인</th>
+                                        <th>IP</th>
+                                        <th>위치 및 통신제공 정보</th>
+                                        <th>내/외부</th>
+                                        <th>연관 Alert 수</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>cdn-update.malicious-domain.ru</td>
+                                        <td>185.234.72.15</td>
+                                        <td>Russia, Moscow / DataLine LLC</td>
+                                        <td><span class="severity-badge high">외부</span></td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>api.tracker-analytics.com</td>
+                                        <td>91.215.85.42</td>
+                                        <td>Netherlands, Amsterdam / HostKey B.V.</td>
+                                        <td><span class="severity-badge high">외부</span></td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>-</td>
+                                        <td>192.168.30.5</td>
+                                        <td>Internal Network / HR Department</td>
+                                        <td><span class="severity-badge low">내부</span></td>
+                                        <td>7</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="recommendation-box">
+                        <div class="recommendation-label">주요 공격 기법 (MITRE ATT&CK)</div>
+                        <div class="mitre-tags" style="margin-bottom: 0.5rem;">
+                            <span class="mitre-tag">T1566.002 Phishing: Spearphishing Link</span>
+                            <span class="mitre-tag">T1071.001 Application Layer Protocol: Web</span>
+                            <span class="mitre-tag">T1102 Web Service</span>
+                            <span class="mitre-tag">T1041 Exfiltration Over C2 Channel</span>
+                        </div>
+                        <p class="recommendation-text" style="margin-top: 0.5rem;">
+                            본 인시던트는 스피어피싱 링크를 통한 초기 접근 시도로 분석됩니다. 공격자는 정상적인 CDN 또는 분석 서비스로 위장한 도메인을 사용하여 보안 솔루션의 탐지를 우회하려 했습니다. 목적지 서버는 HTTPS(443 포트)를 통해 통신하며, 이는 정상 웹 트래픽으로 위장하여 네트워크 모니터링을 회피하기 위한 전형적인 C2 통신 패턴입니다. 해당 도메인은 최근 Cobalt Strike 비콘 배포에 사용된 것으로 Threat Intelligence에서 확인되었습니다.
+                        </p>
+                    </div>
+
+                    <div class="recommendation-box">
+                        <div class="recommendation-label">권장 조치</div>
+                        <p class="recommendation-text">
+                            1. <strong>네트워크 차단:</strong> 탐지된 도메인(cdn-update.malicious-domain.ru, api.tracker-analytics.com) 및 IP 주소를 방화벽과 프록시 서버의 블랙리스트에 등록하여 전사적으로 접근을 차단하시기 바랍니다.<br><br>
+                            2. <strong>호스트 점검:</strong> 해당 사용자의 워크스테이션에서 악성코드 전체 스캔을 수행하고, 브라우저 확장 프로그램, 시작 프로그램, 예약된 작업 등 지속성 메커니즘이 설치되어 있는지 확인하시기 바랍니다.<br><br>
+                            3. <strong>로그 분석:</strong> 지난 7일간 동일 목적지로의 통신 시도가 다른 호스트에서도 발생했는지 네트워크 로그를 분석하여 추가 감염 호스트가 없는지 확인하시기 바랍니다.<br><br>
+                            4. <strong>사용자 대응:</strong> 해당 사용자에게 피싱 메일의 발신자, 제목, 내용을 확인하여 보안팀에 전달하도록 안내하고, 동일한 피싱 메일이 다른 사용자에게도 전달되었는지 이메일 로그를 조회하시기 바랍니다.<br><br>
+                            5. <strong>TI 공유:</strong> 탐지된 IOC(도메인, IP, URL)를 내부 Threat Intelligence 플랫폼에 등록하고, 필요시 ISAC 또는 유관기관과 정보를 공유하시기 바랍니다.
+                        </p>
                     </div>
 
                     <div class="editable-field">
                         <div class="editable-label">담당자 조치 (편집 가능)</div>
-                        <p class="editable-guide">※ 리포트 생성자/관리자가 직접 작성하세요.</p>
+                        <p class="editable-guide">※ 리포트 생성자/관리자가 직접 작성하세요. XDR 자동 조치 외에 보안 담당자가 수행한 추가 조치 사항을 기록합니다.</p>
                     </div>
                 </div>
             </section>
@@ -1317,9 +1438,9 @@
                     </div>
                 </div>
                 <div class="summary-grid" style="grid-template-columns: repeat(3, 1fr);">
-                    <div class="summary-card" style="border-left: 3px solid var(--resolved);"><div class="count" style="color: var(--resolved);">9</div><div class="label">Resolved</div></div>
+                    <div class="summary-card" style="border-left: 3px solid var(--resolved);"><div class="count" style="color: var(--resolved);">9</div><div class="label">해결</div></div>
                     <div class="summary-card" style="border-left: 3px solid var(--investigating);"><div class="count" style="color: var(--investigating);">2</div><div class="label">조사중</div></div>
-                    <div class="summary-card" style="border-left: 3px solid var(--gray-400);"><div class="count" style="color: var(--gray-400);">1</div><div class="label">대기</div></div>
+                    <div class="summary-card" style="border-left: 3px solid var(--gray-400);"><div class="count" style="color: var(--gray-400);">1</div><div class="label">신규</div></div>
                 </div>
             </section>
 
@@ -1335,9 +1456,12 @@
                     
                     <h4>금일 조치 사항</h4>
                     <ul>
-                        <li><strong>[높음]</strong> SSH 접근 정책 강화 검토</li>
-                        <li><strong>[중간]</strong> 인사팀 피싱 대응 안내</li>
-                        <li><strong>[낮음]</strong> 미해결 3건 내일 처리</li>
+                        <li><strong>[높음]</strong> SSH 접근 통제 정책 전반에 대한 재검토 및 강화 방안 마련 ─ 외부 접속 제어, 인증 방식 점검, 비인가 접근 가능성 분석 포함</li>
+
+<li><strong>[중간]</strong> 인사팀 대상 피싱 메일 대응 절차 공지 및 보안 인식 제고 안내 ─ 최근 유입된 피싱 유형 공유 및 예방 행동수칙 전달</li>
+
+<li><strong>[낮음]</strong> 현재 미해결된 3건의 경미 이슈에 대한 후속 조치 진행 ─ 처리 계획 수립 및 조치 기록 작성 권장</li>
+
                     </ul>
                 </div>
             </section>
